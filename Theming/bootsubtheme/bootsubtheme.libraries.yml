@@ -1,0 +1,8 @@
+header:
+  version: 1.x
+  css:
+    theme:
+      css/header.css: {}
+      css/card.css: {}
+  js:
+      js/holder.js: {}    

@@ -1,0 +1,13 @@
+<?php
+
+
+function bootsubtheme_preprocess_region(&$variables) {
+	if($variables['region'] == 'sidebar_second'){
+		foreach ($variables['attributes']['class'] as $k => $class) {
+			if ($class == 'well') {
+				unset($variables['attributes']['class'][$k]);
+			}
+		}
+	}
+}
+
